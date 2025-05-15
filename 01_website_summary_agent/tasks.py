@@ -1,4 +1,3 @@
-# tasks.py
 from crewai import Task
 from agents import summarizer_agent
 
