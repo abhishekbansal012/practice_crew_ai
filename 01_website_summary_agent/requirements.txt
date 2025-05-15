@@ -1,0 +1,4 @@
+crewai
+beautifulsoup4
+requests
+openai
