@@ -1,4 +1,6 @@
 crewai
+langchain
+langchain_community
 beautifulsoup4
 requests
 openai
