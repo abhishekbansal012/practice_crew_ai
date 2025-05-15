@@ -16,8 +16,16 @@ def main():
     )
 
     result = crew.kickoff()
+    # Extract the actual output string
+    summary_text = str(result)  # Or result.output if using CrewAI >= 0.24
+
     print("\n=== Article Summary ===")
-    print(result)
+    print(summary_text)
+
+    # Save summary to summary.md
+    with open("summary.md", "w", encoding="utf-8") as f:
+        f.write("# Medium Article Summary\n\n")
+        f.write(summary_text)
 
 if __name__ == "__main__":
     main()
