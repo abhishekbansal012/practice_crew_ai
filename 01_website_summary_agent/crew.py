@@ -17,7 +17,7 @@ def main():
 
     result = crew.kickoff()
     # Extract the actual output string
-    summary_text = str(result)  # Or result.output if using CrewAI >= 0.24
+    summary_text = str(result)
 
     print("\n=== Article Summary ===")
     print(summary_text)
