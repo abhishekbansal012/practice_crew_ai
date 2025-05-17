@@ -1,0 +1,4 @@
+openai
+autogen
+langchain
+langchain_community
