@@ -1,12 +1,14 @@
-# Article Summary Agent
-This Agent uses OpenAI LLM Agent. Please provide current OPENAI_API_KEY values in env variables. 
+# Blog post writer and feedback system
+You have a writer agent that generates a blog post, and multiple reviewer agents that critique the post. The critic agent acts as the orchestrator, sending the writer’s output to the reviewers and receiving their feedback.
 
-## 🚀 Features
-
-- Scrapes text content from any Medium article URL.
-- Uses an LLM(OpenAI) agent to summarize the article in 5–7 bullet points.
-- Saves the summary in a `summary.md` file.
-- Modular structure with `agents`, `tasks`, `tools`, and `crew`.
+👥 Agents Involved
+Agent	Role
+Writer	Generates the blog post.
+Critic	Coordinates reviews and provides feedback to the writer.
+SEOReviewer	Reviews the content for SEO optimization.
+LegalReviewer	Checks the content for legal compliance.
+EthicsReviewer	Ensures ethical integrity of the content.
+MetaReviewer	Consolidates feedback from all reviewers and gives final suggestion.
 
 ## Installation steps
 
